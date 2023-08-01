@@ -38,7 +38,7 @@ def video_exif_data(video_path : str):
     exif_data = {}
     exif_data["GPSInfo"] = {}
     # Write the complete path of the ExifTool in your device along with .exe at last
-    exe = "C:\\User\\antoi\\Desktop\\UTC\\HolidaysPictures\\exiftool.exe"
+    exe = "exiftool.exe_PATH"
     # Execute the ExifTool command
     process = subprocess.Popen([exe, video_path], stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                                universal_newlines=True)
